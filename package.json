@@ -2,9 +2,28 @@
   "name": "cv",
   "version": "1.0.0",
   "description": "Curriculum vitae",
+  "private": true,
   "main": "index.js",
-  "repository": "git@github.com:p1Machado/cv.git",
   "author": "Patrick Machado <paamachado.93@gmail.com>",
+  "repository": "git@github.com:p1Machado/cv.git",
   "license": "MIT",
-  "private": true
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.6.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
 }
