@@ -1,14 +1,180 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="bundle.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Patrick Machado</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- import Material Icons from Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="bundle.css" />
   </head>
-  <body>
-    Hello World
+  <body class="mdc-typography">
+    <aside class="my-drawer mdc-drawer">
+      <div class="my-drawer__header mdc-drawer__header">
+        <img class="my-avatar" src="me.jpeg" />
+        <h3 class="mdc-drawer__title">Patrick Machado</h3>
+        <h6 class="mdc-drawer__subtitle">Programador Fullstack</h6>
+      </div>
+      <div class="mdc-drawer__content">
+        <!-- <p
+          class="mdc-typography--body1"
+          style="margin-inline-start: auto; margin-inline-end: auto; text-align: justify; max-width: 20em;"
+        >
+          Tenho 24 anos, solteiro e terminando a graduação. Trabalhei de 2012 a
+          2015 na equipe de manutenção do sistema de folha de pagamento do TJSC.
+          Em 2016, com o fim do contrato de licitação, participei de uma startup
+          universitária junto de 3 colegas. Atualmente, trabalho como
+          desenvolvedor em uma empresa pequena. Estou procurando um espaço para
+          trabalhar novamente em equipe. Sempre aproveitei as oportunidades de
+          absorver conhecimento e me importo em compartilhar tudo o que sei. Na
+          área técnica, adoro ser programador, mas tenho consciência e me
+          importo com as questões de negócio e geração de valor.
+        </p> -->
+      </div>
+    </aside>
+    <div class="resume-body mdc-drawer-app-content">
+      <section class="mdc-layout-grid">
+        <p class="mdc-typography--headline4">EXPERIÊNCIA PROFISSIONAL</p>
+        <div class="mdc-card mdc-card--outlined">
+          <div class="mdc-card__primary-action" tabindex="0">
+            <div style="padding: 1em;">
+              <h3
+                class="topic-secondary mdc-typography mdc-typography--subtitle2"
+              >
+                Softplan Planejamento e Sistemas &#8212;&nbsp; 02-2018 / Atual
+              </h3>
+              <h2
+                class="topic-primary mdc-typography mdc-typography--headline6"
+              >
+                Programador Java
+              </h2>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="mdc-card mdc-card--outlined">
+          <div class="mdc-card__primary-action" tabindex="0">
+            <div style="padding: 1em;">
+              <h3
+                class="topic-secondary mdc-typography mdc-typography--subtitle2"
+              >
+                Ilhasoftware &#8212;&nbsp; 02-2017 / 01-2018
+              </h3>
+              <h2
+                class="topic-primary mdc-typography mdc-typography--headline6"
+              >
+                Programador Java
+              </h2>
+              <p class="topic-detail">
+                Desenvolvedor full-stack para manutenção de projeto web.
+                Utilizando tecnologias da especificação JavaEE (JSF, JAX-RS, JPA
+                e CDI).
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="mdc-card mdc-card--outlined">
+          <div class="mdc-card__primary-action" tabindex="0">
+            <div style="padding: 1em;">
+              <h3
+                class="topic-secondary mdc-typography mdc-typography--subtitle2"
+              >
+                Laissez &#8212;&nbsp; 06-2016 / 01-2017
+              </h3>
+              <h2
+                class="topic-primary mdc-typography mdc-typography--headline6"
+              >
+                Programador Ruby
+              </h2>
+              <p class="topic-detail">
+                Desenvolvedor back-end em projeto web com o framework Ruby on
+                Rails.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="mdc-card mdc-card--outlined">
+          <div class="mdc-card__primary-action" tabindex="0">
+            <div style="padding: 1em;">
+              <h3
+                class="topic-secondary mdc-typography mdc-typography--subtitle2"
+              >
+                Conceitual Sistemas de Informação &#8212;&nbsp; 09-2012 /
+                03-2016
+              </h3>
+              <h2
+                class="topic-primary mdc-typography mdc-typography--headline6"
+              >
+                Programador Caché
+              </h2>
+              <p class="topic-detail">
+                Desenvolvedor para manutenção em projeto legado. Utilizando a
+                tecnologia Intersystems Caché Object Script.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mdc-layout-grid">
+        <p class="mdc-typography--headline4">EDUCAÇÃO</p>
+        <div class="mdc-card mdc-card--outlined">
+          <div class="mdc-card__primary-action" tabindex="0">
+            <div style="padding: 1em;">
+              <h3
+                class="topic-secondary mdc-typography mdc-typography--subtitle2"
+              >
+                UNISUL - Universidade do Sul de Santa Catarina &#8212;&nbsp;
+                2012.2 / 2019.1
+              </h3>
+              <h2
+                class="topic-primary mdc-typography mdc-typography--headline6"
+              >
+                Sistemas de Informação
+              </h2>
+              <p class="topic-detail">
+                Ensino superior completo
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="mdc-card mdc-card--outlined">
+          <div class="mdc-card__primary-action" tabindex="0">
+            <div style="padding: 1em;">
+              <h3
+                class="topic-secondary mdc-typography mdc-typography--subtitle2"
+              >
+                SENAI - Serviço Nacional de Aprendizagem Industrial
+                &#8212;&nbsp; 2009.1 / 2010.2
+              </h3>
+              <h2
+                class="topic-primary mdc-typography mdc-typography--headline6"
+              >
+                Técnico de Programação
+              </h2>
+              <p class="topic-detail">
+                Curso técnico completo
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script src="bundle.js" async></script>
   </body>
 </html>

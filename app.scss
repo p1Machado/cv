@@ -1,3 +1,7 @@
-body {
-  color: blue;
-}
+@import "my-theme";
+
+@import "@material/theme/color-palette";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+
+@import "my-layout";
