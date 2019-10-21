@@ -1,0 +1,42 @@
+{
+  "professionalExperiences": [
+    {
+      "companyName": "Softplan Planejamento e Sistemas",
+      "experiencePeriod": "02-2018 / Atual",
+      "experienceTitle": "Programador Java",
+      "experienceDetail": ""
+    },
+    {
+      "companyName": "Ilhasoftware",
+      "experiencePeriod": "02-2017 / 01-2018",
+      "experienceTitle": "Programador Java",
+      "experienceDetail": "Desenvolvedor full-stack para manutenção de projeto web. Utilizando tecnologias da especificação JavaEE (JSF, JAX-RS, JPA e CDI)."
+    },
+    {
+      "companyName": "Laissez",
+      "experiencePeriod": "06-2016 / 01-2017",
+      "experienceTitle": "Programador Ruby",
+      "experienceDetail": ""
+    },
+    {
+      "companyName": "Conceitual Sistemas de Informação",
+      "experiencePeriod": "09-2012 / 03-2016",
+      "experienceTitle": "Programador Caché",
+      "experienceDetail": "Desenvolvedor para manutenção em projeto legado. Utilizando a tecnologia Intersystems Caché Object Script."
+    }
+  ],
+  "educationExperiences": [
+    {
+      "companyName": "UNISUL - Universidade do Sul de Santa Catarina",
+      "experiencePeriod": "2012.2 / 2019.1",
+      "experienceTitle": "Sistemas de Informação",
+      "experienceDetail": "Ensino superior completo."
+    },
+    {
+      "companyName": "SENAI - Serviço Nacional de Aprendizagem Industrial",
+      "experiencePeriod": "2009.1 / 2010.2",
+      "experienceTitle": "Técnico de Programação",
+      "experienceDetail": "Curso técnico completo."
+    }
+  ]
+}

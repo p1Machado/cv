@@ -43,6 +43,10 @@ body {
   z-index: 0;
 }
 
+.experience-item {
+  margin-block-start: 1rem;
+}
+
 .topic-secondary,
 .topic-detail {
   color: mdc-theme-prop-value(text-primary-on-background);
@@ -51,4 +55,10 @@ body {
 
 .topic-primary {
   margin: 0;
+}
+
+.topic-title::before {
+  display: block;
+  content: "";
+  margin-block-start: 0.5em;
 }
