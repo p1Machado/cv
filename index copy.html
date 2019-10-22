@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Patrick Machado</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- import Material Icons from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="bundle.css" />
+  </head>
+  <body class="mdc-typography">
+    <aside class="my-drawer mdc-drawer">
+      <div class="my-drawer__header mdc-drawer__header">
+        <img class="my-avatar" src="me.jpeg" />
+        <h3 class="mdc-drawer__title">Patrick Machado</h3>
+        <h6 class="mdc-drawer__subtitle">Programador Fullstack</h6>
+      </div>
+      <div class="mdc-drawer__content">
+        <!-- <p
+          class="mdc-typography--body1"
+          style="margin-inline-start: auto; margin-inline-end: auto; text-align: justify; max-width: 20em;"
+        >
+          Tenho 24 anos, solteiro e terminando a graduação. Trabalhei de 2012 a
+          2015 na equipe de manutenção do sistema de folha de pagamento do TJSC.
+          Em 2016, com o fim do contrato de licitação, participei de uma startup
+          universitária junto de 3 colegas. Atualmente, trabalho como
+          desenvolvedor em uma empresa pequena. Estou procurando um espaço para
+          trabalhar novamente em equipe. Sempre aproveitei as oportunidades de
+          absorver conhecimento e me importo em compartilhar tudo o que sei. Na
+          área técnica, adoro ser programador, mas tenho consciência e me
+          importo com as questões de negócio e geração de valor.
+        </p> -->
+      </div>
+    </aside>
+    <div class="resume-body mdc-drawer-app-content">
+      <template id="experienceSectionTemplate">
+        <div class="experience-item mdc-card mdc-card--outlined">
+          <div class="mdc-card__primary-action" tabindex="0">
+            <div style="padding: 1em;">
+              <h3 class="topic-secondary mdc-typography mdc-typography--subtitle2">
+                <span id="companyName"></span> &#8212;&nbsp; <span id="experiencePeriod"></span>
+              </h3>
+              <h2 id="experienceTitle" class="topic-primary mdc-typography mdc-typography--headline6"></h2>
+              <p id="experienceDetail" class="topic-detail"></p>
+            </div>
+          </div>
+        </div>
+      </template>
+      <section id="professionalExperiencesSection" class="mdc-layout-grid">
+        <span class="topic-title mdc-typography--headline4">EXPERIÊNCIA PROFISSIONAL</span>
+      </section>
+      <section id="educationExperiencesSection" class="mdc-layout-grid">
+        <span class="topic-title mdc-typography--headline4">EDUCAÇÃO</span>
+      </section>
+    </div>
+    <script src="bundle.js" async></script>
+  </body>
+</html>

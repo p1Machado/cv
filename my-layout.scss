@@ -1,7 +1,7 @@
+@import "@material/card/mdc-card";
+@import "@material/elevation/mdc-elevation";
 @import "@material/layout-grid/mdc-layout-grid";
 @import "@material/typography/mdc-typography";
-@import "@material/elevation/mdc-elevation";
-@import "@material/card/mdc-card";
 
 html,
 body {
@@ -9,38 +9,57 @@ body {
 }
 
 body {
-  display: flex;
   margin: 0;
-}
-
-.my-drawer {
-  width: 400px;
-  height: auto;
-  z-index: 0;
   background: $my-theme-drawer-background;
 
-  .my-drawer__header {
-    margin-top: 3em;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: mdc-layout-grid-breakpoint-min(desktop)) {
+    flex-direction: row;
   }
 }
 
-.my-avatar {
-  width: 50%;
-  max-height: 400px;
-  border-radius: 100%;
-  object-fit: cover;
-  object-position: top;
+.my-drawer {
+  position: relative;
+  text-align: center;
+  margin: auto {
+    top: 1em;
+    bottom: 1em;
+  }
+
+  .my-avatar {
+    max-height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 }
 
-.resume-body {
+.my-content {
   @include mdc-elevation(4);
 
-  width: 100%;
+  background: $mdc-theme-surface;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  flex-grow: 1;
 
   display: block;
-  overflow: auto;
   z-index: 0;
+
+  overflow: hidden;
+
+  .my-content__wrapper {
+    height: 100%;
+    overflow: auto;
+  }
+
+  &::before {
+    display: block;
+    height: 12px;
+    content: "";
+  }
 }
 
 .experience-item {
