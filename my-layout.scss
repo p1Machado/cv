@@ -1,7 +1,6 @@
 @import "@material/card/mdc-card";
 @import "@material/elevation/mdc-elevation";
 @import "@material/layout-grid/mdc-layout-grid";
-@import "@material/typography/mdc-typography";
 
 html,
 body {
@@ -10,7 +9,6 @@ body {
 
 body {
   margin: 0;
-  background: $my-theme-drawer-background;
 
   display: flex;
   flex-direction: column;
@@ -64,20 +62,4 @@ body {
 
 .experience-item {
   margin-block-start: 1rem;
-}
-
-.topic-secondary,
-.topic-detail {
-  color: mdc-theme-prop-value(text-primary-on-background);
-  margin: 0;
-}
-
-.topic-primary {
-  margin: 0;
-}
-
-.topic-title::before {
-  display: block;
-  content: "";
-  margin-block-start: 0.5em;
 }

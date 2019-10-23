@@ -1,6 +1,8 @@
-@import "my-theme";
+@import "styles/config";
+@import "styles/partials";
 
-@import "@material/theme/color-palette";
+// @import "@material/theme/color-palette";
+
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 

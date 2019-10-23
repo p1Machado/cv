@@ -6,28 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- import Material Icons from Google Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <!-- import the Material stylesheet -->
     <link rel="stylesheet" href="bundle.css" />
   </head>
-  <body class="mdc-typography">
+  <body class="mdc-theme--background mdc-typography">
     <!-- <aside class="my-drawer mdc-drawer"> -->
     <aside class="my-drawer">
       <div>
         <img class="my-avatar" src="me.jpeg" />
-        <h3 class="mdc-drawer__title">Patrick Machado</h3>
-        <h6 class="mdc-drawer__subtitle">Programador Fullstack</h6>
+        <h3>Patrick Machado</h3>
+        <h6>Programador Fullstack</h6>
       </div>
       <div>
         <!-- <p
@@ -52,28 +41,21 @@
           <div class="experience-item mdc-card mdc-card--outlined">
             <div class="mdc-card__primary-action" tabindex="0">
               <div style="padding: 1em;">
-                <h3
-                  class="topic-secondary mdc-typography mdc-typography--subtitle2"
-                >
+                <div class="topic-secondary mdc-typography mdc-typography--subtitle2">
                   <span id="companyName"></span> &#8212;&nbsp;
                   <span id="experiencePeriod"></span>
-                </h3>
-                <h2
-                  id="experienceTitle"
-                  class="topic-primary mdc-typography mdc-typography--headline6"
-                ></h2>
+                </div>
+                <h6 id="experienceTitle" class="topic-primary"></h6>
                 <p id="experienceDetail" class="topic-detail"></p>
               </div>
             </div>
           </div>
         </template>
         <section id="professionalExperiencesSection" class="mdc-layout-grid">
-          <span class="topic-title mdc-typography--headline4"
-            >EXPERIÊNCIA PROFISSIONAL</span
-          >
+          <h4>EXPERIÊNCIA PROFISSIONAL</h4>
         </section>
         <section id="educationExperiencesSection" class="mdc-layout-grid">
-          <span class="topic-title mdc-typography--headline4">EDUCAÇÃO</span>
+          <h4>EDUCAÇÃO</h4>
         </section>
       </div>
     </div>
