@@ -1,0 +1,24 @@
+@import "@material/layout-grid/mdc-layout-grid";
+
+body {
+  //   flex-direction: column;
+
+  @media (min-width: mdc-layout-grid-breakpoint-min(desktop)) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+header {
+  min-height: 100vh;
+  padding: 10vh 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+main {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}

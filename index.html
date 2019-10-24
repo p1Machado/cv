@@ -12,14 +12,14 @@
   </head>
   <body class="mdc-theme--background mdc-typography">
     <!-- <aside class="my-drawer mdc-drawer"> -->
-    <aside class="my-drawer">
+    <header>
+      <img class="avatar" src="me.jpeg" />
+      <h3>Patrick Machado</h3>
+      <h6>Programador Fullstack</h6>
+    </header>
+    <!-- <aside class="my-drawer">
       <div>
-        <img class="my-avatar" src="me.jpeg" />
-        <h3>Patrick Machado</h3>
-        <h6>Programador Fullstack</h6>
-      </div>
-      <div>
-        <!-- <p
+        <p
           class="mdc-typography--body1"
           style="margin-inline-start: auto; margin-inline-end: auto; text-align: justify; max-width: 20em;"
         >
@@ -32,33 +32,38 @@
           absorver conhecimento e me importo em compartilhar tudo o que sei. Na
           área técnica, adoro ser programador, mas tenho consciência e me
           importo com as questões de negócio e geração de valor.
-        </p> -->
+        </p>
       </div>
-    </aside>
-    <div class="my-content mdc-drawer-app-content">
-      <div class="my-content__wrapper">
-        <template id="experienceSectionTemplate">
-          <div class="experience-item mdc-card mdc-card--outlined">
-            <div class="mdc-card__primary-action" tabindex="0">
-              <div style="padding: 1em;">
-                <div class="topic-secondary mdc-typography mdc-typography--subtitle2">
-                  <span id="companyName"></span> &#8212;&nbsp;
-                  <span id="experiencePeriod"></span>
+    </aside> -->
+    <main>
+      <div class="backdrop">
+        <div class="backdrop__back-layer"></div>
+        <div class="backdrop__wrapper">
+          <div class="backdrop__front-layer">
+            <template id="experienceSectionTemplate">
+              <div class="experience-card mdc-card mdc-card--outlined">
+                <div class="mdc-card__primary-action" tabindex="0">
+                  <div style="padding: 1em;">
+                    <div class="topic-secondary mdc-typography mdc-typography--subtitle2">
+                      <span id="companyName"></span> &#8212;&nbsp;
+                      <span id="experiencePeriod"></span>
+                    </div>
+                    <h6 id="experienceTitle" class="topic-primary"></h6>
+                    <p id="experienceDetail" class="topic-detail"></p>
+                  </div>
                 </div>
-                <h6 id="experienceTitle" class="topic-primary"></h6>
-                <p id="experienceDetail" class="topic-detail"></p>
               </div>
-            </div>
+            </template>
+            <section id="professionalExperiencesSection" class="mdc-layout-grid">
+              <h4>EXPERIÊNCIA PROFISSIONAL</h4>
+            </section>
+            <section id="educationExperiencesSection" class="mdc-layout-grid">
+              <h4>EDUCAÇÃO</h4>
+            </section>
           </div>
-        </template>
-        <section id="professionalExperiencesSection" class="mdc-layout-grid">
-          <h4>EXPERIÊNCIA PROFISSIONAL</h4>
-        </section>
-        <section id="educationExperiencesSection" class="mdc-layout-grid">
-          <h4>EDUCAÇÃO</h4>
-        </section>
+        </div>
       </div>
-    </div>
+    </main>
     <script src="bundle.js" async></script>
   </body>
 </html>

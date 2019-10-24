@@ -1,9 +1,10 @@
 @import "styles/config";
-@import "styles/partials";
 
 // @import "@material/theme/color-palette";
 
+@import "@material/card/mdc-card";
 @import "@material/drawer/mdc-drawer";
+@import "@material/elevation/mdc-elevation";
 @import "@material/list/mdc-list";
 
-@import "my-layout";
+@import "styles/partials";
