@@ -28,3 +28,7 @@ function fillExperienceTemplate(xpTemplate, xp) {
   xpTemplate.getElementById("experienceTitle").textContent = xp.experienceTitle;
   xpTemplate.getElementById("experienceDetail").textContent = xp.experienceDetail;
 }
+
+window.scrollMain = function scrollMain() {
+  document.querySelector("main").scrollIntoView({ behavior: "smooth" });
+};

@@ -3,6 +3,8 @@
 body {
   //   flex-direction: column;
 
+  scroll-snap-type: y mandatory;
+
   @media (min-width: mdc-layout-grid-breakpoint-min(desktop)) {
     display: flex;
     flex-direction: row;
@@ -11,9 +13,29 @@ body {
 
 header {
   min-height: 100vh;
-  padding: 10vh 12px;
   box-sizing: border-box;
   text-align: center;
+
+  padding: {
+    top: 10vh;
+    right: 12px;
+    bottom: 10vh;
+    left: 12px;
+  }
+
+  scroll-snap-align: start;
+
+  p {
+    padding: {
+      top: 1em;
+      bottom: 3em;
+    }
+    margin: {
+      right: auto;
+      left: auto;
+    }
+    text-align: justify;
+  }
 }
 
 main {
@@ -21,4 +43,6 @@ main {
   position: sticky;
   top: 0;
   height: 100vh;
+
+  scroll-snap-align: start;
 }
