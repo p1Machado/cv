@@ -38,5 +38,31 @@
       "experienceTitle": "Técnico de Programação",
       "experienceDetail": "Curso técnico completo."
     }
+  ],
+  "skills": [
+    {
+      "title": "Java",
+      "rate": "4/5"
+    },
+    {
+      "title": "JavaScript",
+      "rate": "4/5"
+    },
+    {
+      "title": "HTML5 & CSS3",
+      "rate": "4/5"
+    },
+    {
+      "title": "SQL",
+      "rate": "3/5"
+    },
+    {
+      "title": "Git",
+      "rate": "4/5"
+    },
+    {
+      "title": "Maven",
+      "rate": "3/5"
+    }
   ]
 }

@@ -24,20 +24,24 @@
         compartilhar tudo o que sei. Na área técnica, adoro ser programador, mas tenho consciência e me importo com as
         questões de negócio e geração de valor.
       </p> -->
-      <button onclick="scrollMain();" class="mdc-icon-button material-icons">
+      <button id="scrollMainButton" onclick="scrollMain();" class="mdc-icon-button material-icons">
         arrow_downward
       </button>
     </header>
     <main id="main">
       <div class="backdrop">
-        <div class="backdrop__back-layer"></div>
+        <div class="backdrop__back-layer">
+          <!-- <button class="mdc-icon-button material-icons">menu</button> -->
+          <div style="flex: 1;"></div>
+          <button id="printButton" onclick="window.print()" class="mdc-icon-button material-icons">print</button>
+        </div>
         <div class="backdrop__wrapper">
           <div class="backdrop__front-layer">
             <template id="experienceSectionTemplate">
               <div class="experience-card mdc-card mdc-card--outlined">
                 <div class="mdc-card__primary-action" tabindex="0">
                   <div style="padding: 1em;">
-                    <div class="topic-secondary mdc-typography mdc-typography--subtitle2">
+                    <div class="topic-secondary mdc-typography--subtitle2">
                       <span id="companyName"></span> &#8212;&nbsp;
                       <span id="experiencePeriod"></span>
                     </div>
@@ -48,10 +52,27 @@
               </div>
             </template>
             <section id="professionalExperiencesSection" class="mdc-layout-grid">
-              <h4>EXPERIÊNCIA PROFISSIONAL</h4>
+              <h5>EXPERIÊNCIA PROFISSIONAL</h5>
             </section>
             <section id="educationExperiencesSection" class="mdc-layout-grid">
-              <h4>EDUCAÇÃO</h4>
+              <h5>EDUCAÇÃO</h5>
+            </section>
+            <section id="skillsSection" class="mdc-layout-grid">
+              <h5>HABILIDADES</h5>
+              <table class="skill-rating">
+                <tbody id="skillsSectionTBody">
+                  <template id="skillsSectionTemplate">
+                    <tr>
+                      <td>
+                        <span id="title" class="mdc-typography--body1"></span>
+                      </td>
+                      <td>
+                        <my-rating id="rate"></my-rating>
+                      </td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
             </section>
           </div>
         </div>

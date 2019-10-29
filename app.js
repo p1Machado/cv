@@ -1,8 +1,10 @@
+import "./scripts/components";
 import resumeData from "./resumeData.json";
 
-var experienceSectionTemplate = document.querySelector("#experienceSectionTemplate");
+var experienceSectionTemplate = document.getElementById("experienceSectionTemplate");
+var skillsSectionTemplate = document.getElementById("skillsSectionTemplate");
 
-var professionalExperiencesSection = document.querySelector("#professionalExperiencesSection");
+var professionalExperiencesSection = document.getElementById("professionalExperiencesSection");
 
 resumeData.professionalExperiences.forEach((xp) => {
   let xpTemplate = document.importNode(experienceSectionTemplate.content, true);
@@ -12,7 +14,7 @@ resumeData.professionalExperiences.forEach((xp) => {
   professionalExperiencesSection.appendChild(xpTemplate, true);
 });
 
-var educationExperiencesSection = document.querySelector("#educationExperiencesSection");
+var educationExperiencesSection = document.getElementById("educationExperiencesSection");
 
 resumeData.educationExperiences.forEach((xp) => {
   let xpTemplate = document.importNode(experienceSectionTemplate.content, true);
@@ -20,6 +22,17 @@ resumeData.educationExperiences.forEach((xp) => {
   fillExperienceTemplate(xpTemplate, xp);
 
   educationExperiencesSection.appendChild(xpTemplate, true);
+});
+
+var skillsSectionTBody = document.getElementById("skillsSectionTBody");
+
+resumeData.skills.forEach((skill) => {
+  let skillTemplate = document.importNode(skillsSectionTemplate.content, true);
+
+  skillTemplate.getElementById("title").textContent = skill.title;
+  skillTemplate.getElementById("rate").setAttribute("rate", skill.rate);
+
+  skillsSectionTBody.appendChild(skillTemplate, true);
 });
 
 function fillExperienceTemplate(xpTemplate, xp) {

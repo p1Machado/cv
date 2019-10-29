@@ -45,4 +45,8 @@ main {
   height: 100vh;
 
   scroll-snap-align: start;
+
+  @media print {
+   font-size: 12px; 
+  }
 }

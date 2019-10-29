@@ -1,0 +1,5 @@
+#scrollMainButton {
+  @media print, (min-width: mdc-layout-grid-breakpoint-min(desktop)) {
+    display: none;
+  }
+}
